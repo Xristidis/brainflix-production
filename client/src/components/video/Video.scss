@@ -1,0 +1,217 @@
+@import "../../styles/partials/mixins";
+@import "../../styles/partials/variables";
+@import "../../styles/partials/fonts";
+
+.main-video {
+  cursor: default;
+  font-family: "avenir";
+  &__section-wrapper {
+    width: 100%;
+    margin: auto;
+  }
+  &__video-wrapper {
+    position: relative;
+    max-height: 535px;
+    @include tablet {
+      background-color: black;
+    }
+  }
+  &__image {
+    width: 100%;
+    max-height: 535px;
+    @include tablet {
+      width: 90%;
+      margin: 0 5% 0 5%;
+    }
+    @include desktop {
+      width: 80%;
+      margin: 0 10% 0 10%;
+    }
+  }
+  &__video-buttons {
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 90%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include tablet {
+      bottom: 30px;
+      width: 85%;
+    }
+    @include desktop {
+      width: 77%;
+    }
+  }
+
+  &__play {
+    padding: 10px 18px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    height: 20px;
+  }
+  &__play-duration {
+    display: none;
+    @include tablet {
+      display: inline-block;
+      color: $white-color;
+      padding-right: 4%;
+      font-size: 0.75rem;
+    }
+    @include desktop {
+      padding-right: 3%;
+    }
+  }
+  &__play-bar-wrapper {
+    height: 100%;
+    width: 45%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    @include tablet {
+      width: 72%;
+      justify-content: space-between;
+    }
+    @include desktop {
+      width: 81%;
+    }
+  }
+  &__play-bar {
+    height: 12%;
+    width: 75%;
+    background-color: black;
+    border-radius: 6px;
+    margin-left: 5%;
+    @include tablet {
+      width: 75%;
+    }
+    @include desktop {
+      width: 85%;
+      margin-left: 3%;
+    }
+  }
+  &__sound-screen-wrapper {
+    padding: 0 18px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 60px;
+  }
+  &__volume {
+    height: 20px;
+  }
+  &__full-screen {
+    height: 20px;
+  }
+  &__header {
+    font-family: "avenir-bold";
+    font-size: 1.5rem;
+    @include tablet {
+      font-size: 2.2rem;
+    }
+  }
+  &__data-wrapper {
+    cursor: default;
+    border-bottom: solid 1px $mercury;
+    padding-bottom: 8px;
+    width: 90%;
+    margin: 30px auto 0;
+    @include tablet {
+      width: 95%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    @include desktop {
+      margin: 40px 0 0 2.5%;
+      width: 68%;
+      border-bottom: solid 1px $mercury;
+    }
+    @include mac {
+      width: 66.75%;
+    }
+  }
+  &__author-date {
+    display: flex;
+    width: 68%;
+    justify-content: space-between;
+    @include tablet {
+      max-width: 200px;
+      margin-right: 44%;
+    }
+  }
+  &__date {
+    font-size: 0.9rem;
+    margin: 16px 0 0 0;
+    font-family: "avenir";
+    color: $silver-color;
+  }
+  &__author {
+    font-size: 0.9rem;
+    margin: 16px 0 0 0;
+    font-family: "avenir-bold";
+  }
+  &__info-wrapper {
+    display: flex;
+    width: 68%;
+    justify-content: space-between;
+    @include tablet {
+      display: flex;
+      width: 210px;
+      justify-content: space-between;
+    }
+    @include desktop {
+      margin-right: 5%;
+    }
+    @include mac {
+      margin-right: 3%;
+    }
+  }
+  &__views {
+    display: flex;
+    width: 51%;
+    justify-content: space-between;
+    font-family: "avenir";
+    @include tablet {
+      width: 49%;
+    }
+  }
+  &__likes {
+    display: flex;
+    width: 42%;
+    justify-content: space-between;
+    font-family: "avenir";
+    @include tablet {
+      width: 40%;
+    }
+  }
+  &__description {
+    cursor: default;
+    padding: 24px 0;
+    line-height: 1.5;
+    font-size: 0.74rem;
+    font-family: "avenir-demi-bold";
+    width: 90%;
+    margin: auto;
+    @include tablet {
+      font-size: 0.83rem;
+      width: 95%;
+      max-width: 500px;
+      margin: 0 0 0 2.5%;
+    }
+    @include desktop {
+      font-size: 1rem;
+      max-width: 775px;
+      margin: 0 0 0 2.5%;
+    }
+  }
+}

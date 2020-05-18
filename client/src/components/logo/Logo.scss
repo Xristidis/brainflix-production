@@ -1,0 +1,17 @@
+@import '../../styles/partials/mixins';
+@import '../../styles/partials/variables';
+@import '../../styles/partials/fonts';
+
+
+.logo {
+    margin: 9px 0;
+    @include tablet {
+        width: 16%;
+        margin: 0px 18% 0 0;
+    }
+    @include desktop {
+        margin: 0px 38% 0 0;
+        display: flex;
+        justify-content: flex-start;
+    }
+}

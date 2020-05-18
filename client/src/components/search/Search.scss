@@ -1,0 +1,14 @@
+@import '../../styles/partials/mixins';
+@import '../../styles/partials/variables';
+@import '../../styles/partials/fonts';
+
+.header__form {
+    @include tablet {
+        width: 36%;
+        max-width: 250px;
+    }
+    @include desktop {
+        width: 25%;
+        max-width: 500px;
+    }
+}

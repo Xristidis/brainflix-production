@@ -1,0 +1,299 @@
+@import "../../styles/partials/mixins";
+@import "../../styles/partials/variables";
+@import "../../styles/partials/fonts";
+
+main {
+  max-width: 1200px;
+}
+
+.upload {
+  cursor: default;
+  height: auto;
+  max-width: 1200px;
+  margin: auto;
+  @include desktop {
+    max-width: 943px;
+    display: inline-block;
+    width: 72%;
+  }
+  &__video-info {
+    @include tablet {
+      width: 95%;
+      margin: auto;
+    }
+    @include desktop {
+      display: flex;
+    }
+  }
+  &__photo-wrapper {
+    width: 90%;
+    margin: 0 auto 5%;
+    @include tablet {
+      margin: 2.5% auto;
+      width: 100%;
+    }
+    @include desktop {
+      margin: 0;
+      width: 60%;
+    }
+  }
+  &__video-thumbnail-heading {
+    color: $silver-color;
+    font-family: "avenir-demi-bold";
+    font-size: 0.8rem;
+    margin-bottom: 1%;
+    @include desktop {
+      margin-bottom: 1%;
+      margin-top: 0;
+    }
+  }
+  &__video-photo {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    @include tablet {
+      width: 45%;
+    }
+    @include desktop {
+      width: 95%;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 90%;
+    max-width: 528px;
+    justify-content: space-between;
+    margin: auto;
+    border-bottom: solid 1px $mercury;
+    @include tablet {
+      align-items: flex-end;
+      width: 95%;
+      max-width: 728px;
+      padding-bottom: 24px;
+    }
+    @include desktop {
+      align-items: flex-end;
+      width: 95%;
+      max-width: 943px;
+      padding-bottom: 24px;
+      border-bottom: none;
+    }
+  }
+  &__header-wrapper {
+    padding: 5% 0 5% 0;
+    margin: 5% 0 0 0;
+    border-top: solid 1px $mercury;
+    @include tablet {
+      padding: 1% 0 2% 0;
+      margin: 0% 0 0 0;
+    }
+  }
+  &__header {
+    font-family: "avenir-bold";
+    margin: auto;
+    padding: 3.5% 0 2.5% 0;
+    width: 90%;
+    font-size: 1.6rem;
+    @include tablet {
+      width: 95%;
+      padding: 3.5% 0 3.5% 0;
+      font-size: 2rem;
+      border-bottom: solid 1px $silver-color;
+    }
+    @include desktop {
+      border-bottom: none;
+      padding: 2.5% 0 3.5% 0;
+    }
+  }
+  &__new {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    align-items: end;
+    @include tablet {
+      flex-direction: row;
+      width: 100%;
+      align-items: flex-end;
+      justify-content: end;
+    }
+    @include desktop {
+      flex-direction: row;
+      width: 92%;
+      align-items: flex-end;
+      justify-content: end;
+    }
+  }
+
+  &__content {
+    font-family: "avenir";
+    margin: 16px auto;
+    @include tablet {
+      font-size: 0.88rem;
+    }
+    @include desktop {
+      width: 850px;
+    }
+  }
+
+  &__text {
+    width: 78%;
+    max-width: 440px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 16px;
+    align-items: flex-end;
+  }
+  &__info {
+    width: 78%;
+    max-width: 440px;
+    display: flex;
+    margin-left: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 0.85rem;
+    @include tablet {
+      width: auto;
+      max-width: 615px;
+    }
+    @include desktop {
+      width: 720px;
+      max-width: 720px;
+    }
+  }
+  &__label {
+    color: silver;
+    font-family: "avenir-demi-bold";
+    font-size: 0.8rem;
+    margin-bottom: 2%;
+    @include tablet {
+      margin-bottom: 6px;
+    }
+  }
+  &__upload-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 16px 0px;
+    width: 100%;
+    @include tablet {
+      margin: 0;
+    }
+  }
+
+  &__title {
+    height: 30px;
+    padding: 10px 0 0 10px;
+    margin: 0 0 10% 0;
+    resize: none;
+    @include tablet {
+      padding: 14px 0 0 14px;
+      margin: 0 0 3% 0;
+    }
+  }
+  &__description {
+    height: 120px;
+    padding: 10px 0 0 10px;
+    resize: none;
+    @include tablet {
+      padding: 14px 0 0 14px;
+    }
+  }
+  &__button-wrapper {
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+      display: flex;
+      flex-direction: row-reverse;
+      margin-top: 5%;
+      border-top: solid 1px $silver-color;
+      padding: 5% 0;
+    }
+    @include desktop {
+      border-top: none;
+    }
+  }
+  &__button {
+    background-color: $bright-blue;
+    font-family: "avenir-bold";
+    color: #ffffff;
+    border-radius: 5px;
+    height: 48px;
+    margin: 12% auto 3%;
+    width: 100%;
+    border-width: 0;
+    @include tablet {
+      height: 50px;
+      width: 150px;
+      margin: 0;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__cancel-button {
+    background-color: $white-color;
+    font-family: "avenir-bold";
+    color: $bright-blue;
+    border-radius: 5px;
+    height: 48px;
+    width: 30%;
+    border-width: 0px;
+    margin: 0 auto 5%;
+    @include tablet {
+      height: 50px;
+      width: 150px;
+      margin: 0;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__name {
+    width: 60%;
+    margin: 35px 0 0 0;
+    font-family: "avenir-demi-bold";
+    @include tablet {
+      width: auto;
+      margin: 35px 8px 0 0;
+    }
+    @include desktop {
+      margin: 30px 8px 0 0;
+    }
+  }
+  &__date {
+    font-family: "avenir";
+    width: 40%;
+    text-align: end;
+    margin: 35px 0 0 0;
+    color: silver;
+    @include tablet {
+      width: 40%;
+      text-align: start;
+    }
+    @include desktop {
+      margin: 30px 8px 0 0;
+    }
+  }
+}
+/********** INPUT FEILDS ***********/
+input[type="text"],
+select,
+textarea {
+  border-radius: 4px;
+  resize: vertical;
+  background-color: $white-color;
+  font-family: "avenir";
+  &::placeholder {
+    color: black;
+  }
+  &::focus {
+    // background-color: white;
+  }
+}
