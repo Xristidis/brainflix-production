@@ -25,10 +25,10 @@ app.use("/videoList", videoListRoutes);
 // serves build folder for heroku https://www.youtube.com/watch?v=e1LaekAnVIM
 
 if (process.env.NODE_ENV === 'production') {
-    app.use(express.static('client/build'));
+    app.use(express.static('../client/build'));
 
     app.get('*', (req, res) => {
-        res.sendFile(path.join(__dirname, '../client/build/index.html')); //relative path
+        res.sendFile(path.join(__dirname, 'client', 'build', 'index.html')); //relative path
     })
 }
 
