@@ -14,7 +14,7 @@ app.use(cors());
 
 // Test route (go to http://localhost:8080/ in your browser 
 app.get('/', (req, res) => {
-    res.send('refactored serverside');
+    res.send('Route Test Success!');
 });
 
 // Any routes that begin with /allVideos will be handled with allVideosRoutes
