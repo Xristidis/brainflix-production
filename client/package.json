@@ -17,12 +17,14 @@
     "sass": "^1.25.0",
     "uuid": "^7.0.1"
   },
+  "engines": {
+    "node": "v12.14.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -14,7 +14,7 @@ app.use(cors());
 
 // Test route (go to http://localhost:8080/ in your browser 
 app.get('/', (req, res) => {
-    res.send('Route Test Success!');
+    res.send('refactored serverside');
 });
 
 // Any routes that begin with /allVideos will be handled with allVideosRoutes
@@ -25,11 +25,15 @@ app.use("/videoList", videoListRoutes);
 // serves build folder for heroku https://www.youtube.com/watch?v=e1LaekAnVIM
 
 if (process.env.NODE_ENV === 'production') {
-    app.use(express.static('../client/build'));  // RIGHT LOCATION????
+    app.use(express.static('client/build'));
 
     app.get('*', (req, res) => {
-        res.sendFile(path.join(__dirname, 'client', 'build', 'index.html')); //relative path ?????
+        res.sendFile(path.join(__dirname, 'client', 'build', 'index.html')); //relative path
     })
 }
 
 app.listen(port, () => console.log(`On ${port}`));
+
+// app.listen(port, () => {
+//     console.log(`Server is up on port ${port}!`);
+// });

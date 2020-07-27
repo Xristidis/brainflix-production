@@ -14,13 +14,13 @@ class Homepage extends React.Component {
   };
   componentDidMount() {
     axios
-      .get(`https://brainflix-production.herokuapp.com/videoList`)
+      .get(`http://localhost:8080/videoList`)
       .then(res => {
         const nextVideoList = res.data;
         const mainVideoId = nextVideoList[0].id;
         this.setState({ nextVideoList });
         return axios.get(
-          `https://brainflix-production.herokuapp.com/${mainVideoId}`
+          `http://localhost:8080/allVideos/${mainVideoId}`
         );
       })
       .then(res => {
@@ -35,7 +35,7 @@ class Homepage extends React.Component {
       const videoId = this.props.match.params.videoId;
       axios
         .get(
-          `https://brainflix-production.herokuapp.com/${videoId}`
+          `http://localhost:8080/allVideos/${videoId}`
         )
         .then(res => {
           const mainVideo = res.data;

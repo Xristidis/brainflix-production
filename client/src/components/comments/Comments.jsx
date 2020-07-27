@@ -1,8 +1,8 @@
 import React from "react";
 import "./Comments.scss";
-import VideoPlaceholder from "../../assets/images/video-list-0.jpg";
-import views from "../../assets/icons/SVG/Icon-views.svg"; // sometimes assets dont show
-import likes from "../../assets/icons/SVG/Icon-likes.svg";
+// import VideoPlaceholder from "../../assets/images/video-list-0.jpg";
+// import views from "../../assets/icons/SVG/Icon-views.svg";
+// import likes from "../../assets/icons/SVG/Icon-likes.svg";
 
 function timeSince(date) {
   var seconds = Math.floor((new Date() - date) / 1000);
