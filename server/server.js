@@ -1,5 +1,5 @@
 const express = require("express");
-const cors = require("cors");
+// const cors = require("cors");
 const app = express();
 const port = process.env.PORT || 5000;
 const path = require('path');
@@ -10,7 +10,7 @@ const allVideosRoutes = require('./routes/allVideos.js');
 
 //Middleware
 app.use(express.json());
-app.use(cors());
+// app.use(cors());
 
 // Test route (go to https://localhost:5000/ in your browser 
 app.get('/', (req, res) => {
@@ -24,13 +24,24 @@ app.use("/videoList", videoListRoutes);
 
 // serves build folder for heroku https://www.youtube.com/watch?v=e1LaekAnVIM
 
-app.use(express.static(path.join(__dirname, "client/build")));
+declarationapp.use(express.static(path.join(__dirname, 'client/build')));
+// app.use(express.static(path.join(__dirname, "client/build")));
+modeif(process.env.NODE_ENV === 'production'); {
+    app.use(express.static(path.join(__dirname, 'client/build')));
 
-app.get("/*", function (req, res) {
-    res.sendFile(path.join(__dirname, "client/build/index.html"));
-});
 
-app.listen(port, () => console.log(`On ${port}`));
+    app.get('*', (req, res) => { res.sendfile(path.join(__dirname = 'client/build/index.html')); })
+}
+// app.get("/*", function (req, res) {
+//     res.sendFile(path.join(__dirname, "client/build/index.html"));
+// });
+
+// just added below
+modeapp.get('*', (req, res) => { res.sendFile(path.join(__dirname + '/client/public/index.html')); })
+
+serverapp.listen(port, (req, res) => { console.log(`server listening on port: ${port}`); })
+
+// app.listen(port, () => console.log(`On ${port}`));
 
 // app.listen(port, () => {
 //     console.log(`Server is up on port ${port}!`);
