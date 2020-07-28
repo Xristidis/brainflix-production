@@ -7,7 +7,7 @@ const allVideosData = require('../data/allVideos.json')
 
 const router = express.Router();
 
-// When we make a GET request to `localhost:8080/allVideos/` this is what will get triggered
+// When we make a GET request to `localhost:5000/allVideos/` this is what will get triggered
 router.get('/', (req, res) => {
     res.json(allVideosData);
 });

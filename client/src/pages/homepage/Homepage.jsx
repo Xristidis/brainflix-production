@@ -14,13 +14,13 @@ class Homepage extends React.Component {
   };
   componentDidMount() {
     axios
-      .get(`http://localhost:8080/videoList`)
+      .get(`https://localhost:5000/videoList`)
       .then(res => {
         const nextVideoList = res.data;
         const mainVideoId = nextVideoList[0].id;
         this.setState({ nextVideoList });
         return axios.get(
-          `http://localhost:8080/allVideos/${mainVideoId}`
+          `https://localhost:5000/allVideos/${mainVideoId}`
         );
       })
       .then(res => {
@@ -35,7 +35,7 @@ class Homepage extends React.Component {
       const videoId = this.props.match.params.videoId;
       axios
         .get(
-          `http://localhost:8080/allVideos/${videoId}`
+          `https://localhost:5000/allVideos/${videoId}`
         )
         .then(res => {
           const mainVideo = res.data;

@@ -53,10 +53,10 @@ class Upload extends React.Component {
         'channel': "New Upload",
         'id': `${uuid}`
       };
-    axios.post("http://localhost:8080/videoList", { newVideoForList: newVidForList })
+    axios.post("https://localhost:5000/videoList", { newVideoForList: newVidForList })
       .then(res => {
         console.log(res)
-        axios.post(`http://localhost:8080/allVideos`, { newVideo })
+        axios.post(`https://localhost:5000/allVideos`, { newVideo })
       })
   };
 

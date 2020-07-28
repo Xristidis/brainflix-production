@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 5000;
 const path = require('path');
 
 // Routes - these routes will only work properly if you have the `module.exports` statement in these files
@@ -12,7 +12,7 @@ const allVideosRoutes = require('./routes/allVideos.js');
 app.use(express.json());
 app.use(cors());
 
-// Test route (go to http://localhost:8080/ in your browser 
+// Test route (go to https://localhost:5000/ in your browser 
 app.get('/', (req, res) => {
     res.send('refactored serverside');
 });
