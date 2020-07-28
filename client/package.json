@@ -1,5 +1,5 @@
 {
-  "name": "brainflix",
+  "name": "client",
   "version": "0.1.0",
   "private": false,
   "homepage": "/build",
@@ -17,6 +17,7 @@
     "sass": "^1.25.0",
     "uuid": "^7.0.1"
   },
+  "proxy": "http://localhost:8080",
   "engines": {
     "node": "v12.14.0"
   },
