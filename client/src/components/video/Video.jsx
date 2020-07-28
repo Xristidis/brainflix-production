@@ -52,16 +52,16 @@ export default class Video extends React.Component {
       <section className="main-video__section-wrapper">
         <>
           <div className="main-video__video-wrapper">
-            <img src={image} className="main-video__image" />
+            <img src={image} alt="icon" className="main-video__image" />
             <div className="main-video__video-buttons">
-              <img src={play} className="main-video__play" />
+              <img src={play} alt="icon" className="main-video__play" />
               <div className="main-video__play-bar-wrapper">
                 <div className="main-video__play-bar" />
                 <div className="main-video__play-duration">0:00/{duration}</div>
               </div>
               <div className="main-video__sound-screen-wrapper">
-                <img src={fullscreen} className="main-video__full-screen" />
-                <img src={volume} className="main-video__volume" />
+                <img src={fullscreen} alt="icon" className="main-video__full-screen" />
+                <img src={volume} alt="icon" className="main-video__volume" />
               </div>
             </div>
           </div>
@@ -73,11 +73,11 @@ export default class Video extends React.Component {
             </div>
             <div className="main-video__info-wrapper">
               <div className="main-video__views">
-                <img src={viewsIcon} className="main-video__view-icon" />
+                <img src={viewsIcon} alt="icon" className="main-video__view-icon" />
                 <p className="">{views}</p>
               </div>
               <div className="main-video__likes">
-                <img src={likesIcon} className="main-video__like-icon" />
+                <img src={likesIcon} alt="icon" className="main-video__like-icon" />
                 <p className="main-video__like-count">{likes}</p>
               </div>
             </div>
