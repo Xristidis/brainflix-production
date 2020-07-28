@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "avenir";
+  src: url("../../assets/Font/AvenirNextProLT/AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+  font-family: "avenir-bold";
+  src: url("../../assets/Font/AvenirNextProLT/AvenirNextLTPro-Bold.otf");
+}
+
+@font-face {
+  font-family: "avenir-demi-bold";
+  src: url("../../assets/Font/AvenirNextProLT/AvenirNextLTPro-Demi.otf");
+}
+
+.next-video {
+  cursor: default;
+  margin: 40px auto;
+  width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+  .next-video {
+    width: 95%;
+    border-top: solid 1px #e1e1e1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .next-video {
+    display: inline-block;
+    width: 23%;
+    position: absolute;
+    right: 42px;
+    top: 640px;
+    border-top: none;
+    margin: 0;
+    padding-left: 3%;
+    border-left: solid 1px #e1e1e1;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .next-video {
+    right: 115px;
+  }
+}
+
+.next-video__header {
+  color: #afafaf;
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 768px) {
+  .next-video__header {
+    margin: 40px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .next-video__header {
+    margin: 40px 0 20px;
+  }
+}
+
+.next-video__list-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .next-video__list-wrapper {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .next-video__list-wrapper {
+    width: 100%;
+  }
+}
+
+.next-video__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 14px 0;
+}
+
+.next-video__thumbnail {
+  width: 40%;
+  height: 70px;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.next-video__info-wrapper {
+  width: 56%;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.next-video__description {
+  font-family: "avenir-demi-bold";
+}
+
+.next-video__author {
+  margin-bottom: 8px;
+  font-family: "avenir";
+}
+
+@media screen and (min-width: 768px) {
+  .next-video__author {
+    font-size: 0.9rem;
+  }
+}
+/*# sourceMappingURL=NextVideo.css.map */

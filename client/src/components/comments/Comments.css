@@ -1,0 +1,445 @@
+@font-face {
+  font-family: "avenir";
+  src: url("../../assets/Font/AvenirNextProLT/AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+  font-family: "avenir-bold";
+  src: url("../../assets/Font/AvenirNextProLT/AvenirNextLTPro-Bold.otf");
+}
+
+@font-face {
+  font-family: "avenir-demi-bold";
+  src: url("../../assets/Font/AvenirNextProLT/AvenirNextLTPro-Demi.otf");
+}
+
+.comments {
+  cursor: default;
+  height: auto;
+  max-width: 1200px;
+  margin: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .comments {
+    max-width: 943px;
+    display: inline-block;
+    width: 72%;
+    margin-top: 0%;
+  }
+}
+
+.comments__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100%;
+  width: 90%;
+  max-width: 528px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  border-bottom: solid 1px #e1e1e1;
+}
+
+@media screen and (min-width: 768px) {
+  .comments__wrapper {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 95%;
+    max-width: 728px;
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .comments__wrapper {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 95%;
+    max-width: 943px;
+    padding-bottom: 24px;
+    border-bottom: none;
+  }
+}
+
+.comments__header {
+  font-family: "avenir-bold";
+  margin: auto;
+  padding: 3.5% 0 2.5% 0;
+  width: 90%;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .comments__header {
+    width: 95%;
+  }
+}
+
+.comments__new {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 75%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+@media screen and (min-width: 768px) {
+  .comments__new {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 90%;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .comments__new {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 92%;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+}
+
+.comments__past-wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .comments__past-wrapper {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .comments__past-wrapper {
+    width: 95.5%;
+    border-bottom: solid 1px #e1e1e1;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .comments__past-wrapper {
+    width: 92%;
+  }
+}
+
+.comments__past {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  height: 195px;
+  line-height: 1.5;
+  border-bottom: solid 1px #e1e1e1;
+  font-family: "avenir";
+}
+
+@media screen and (min-width: 768px) {
+  .comments__past {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    height: 115px;
+    border-bottom: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .comments__past {
+    height: 125px;
+    border-top: solid 1px #e1e1e1;
+  }
+}
+
+.comments__content {
+  font-family: "avenir";
+  margin: 16px auto;
+}
+
+@media screen and (min-width: 768px) {
+  .comments__content {
+    font-size: 0.88rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .comments__content {
+    width: 850px;
+  }
+}
+
+.comments__photo {
+  background-image: url(../../assets/images/Mohan-muruge.jpg);
+  background-position: inherit;
+  background-size: cover;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  margin-top: 15%;
+}
+
+@media screen and (min-width: 768px) {
+  .comments__photo {
+    margin-top: 0;
+  }
+}
+
+.comments__past-photo {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  background-color: #e1e1e1;
+  margin: 35px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .comments__past-photo {
+    margin: 30px 0;
+  }
+}
+
+.comments__text {
+  width: 78%;
+  max-width: 440px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 16px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.comments__info {
+  width: 78%;
+  max-width: 440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 16px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.85rem;
+}
+
+@media screen and (min-width: 768px) {
+  .comments__info {
+    width: auto;
+    max-width: 615px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .comments__info {
+    width: 720px;
+    max-width: 720px;
+  }
+}
+
+.comments__label {
+  color: silver;
+  font-family: "avenir-demi-bold";
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 768px) {
+  .comments__label {
+    margin-bottom: 6px;
+  }
+}
+
+.comments__comment-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 125px;
+  margin: 16px 0px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .comments__comment-area {
+    height: 70px;
+    width: 460px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .comments__comment-area {
+    width: 550px;
+  }
+}
+
+.comments__comment-input {
+  height: 96px;
+  padding: 10px 0 0 10px;
+  resize: none;
+}
+
+@media screen and (min-width: 768px) {
+  .comments__comment-input {
+    padding: 14px 0 0 14px;
+  }
+}
+
+.comments__button {
+  background-color: #0095ff;
+  font-family: "avenir-bold";
+  color: #ffffff;
+  border-radius: 5px;
+  height: 48px;
+  margin-bottom: 10%;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .comments__button {
+    height: 50px;
+    margin-left: 16px;
+    margin-bottom: 0;
+    width: 150px;
+  }
+}
+
+.comments__button:hover {
+  cursor: pointer;
+}
+
+.comments__name {
+  width: 51%;
+  margin: 35px 0 0 0;
+  font-family: "avenir-demi-bold";
+}
+
+@media screen and (min-width: 768px) {
+  .comments__name {
+    width: auto;
+    margin: 35px 8px 0 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .comments__name {
+    margin: 30px 8px 0 0;
+  }
+}
+
+.comments__date {
+  font-family: "avenir";
+  width: 42%;
+  text-align: end;
+  margin: 35px 0 0 0;
+  color: silver;
+}
+
+@media screen and (min-width: 768px) {
+  .comments__date {
+    width: 40%;
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .comments__date {
+    margin: 30px 8px 0 0;
+  }
+}
+
+/********** INPUT FEILDS ***********/
+input[type="text"],
+select,
+textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  background-color: white;
+  font-family: "avenir";
+}
+
+input[type="text"]::-webkit-input-placeholder,
+select::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: black;
+}
+
+input[type="text"]:-ms-input-placeholder,
+select:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: black;
+}
+
+input[type="text"]::-ms-input-placeholder,
+select::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  color: black;
+}
+
+input[type="text"]::placeholder,
+select::placeholder,
+textarea::placeholder {
+  color: black;
+}
+/*# sourceMappingURL=Comments.css.map */
