@@ -13,14 +13,14 @@ app.use(express.json());
 app.use(cors());
 
 // Test route (go to https://localhost:5000/ in your browser 
-app.get('/', (req, res) => {
+app.get('/api/', (req, res) => {
     res.send('refactored serverside');
 });
 
 // Any routes that begin with /allVideos will be handled with allVideosRoutes
-app.use("/allVideos", allVideosRoutes);
+app.use("/api/allVideos", allVideosRoutes);
 // Any routes that begin with /videoList will be handled with videoListRoutes
-app.use("/videoList", videoListRoutes);
+app.use("/api/videoList", videoListRoutes);
 
 // serves build folder for heroku https://www.youtube.com/watch?v=e1LaekAnVIM
 

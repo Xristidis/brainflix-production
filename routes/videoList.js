@@ -14,7 +14,7 @@ router.post('/', (req, res) => {
     // Equivalent to saying `const body = req.body;`
     const { body } = req;
     videoListData.push(body.newVideoForList);
-    fs.writeFileSync("./data/videoList.json", JSON.stringify(videoListData, null, 2));
+    fs.writeFileSync("../data/videoList.json", JSON.stringify(videoListData, null, 2));
     res.status(201).json(videoListData);
 });
 module.exports = router;

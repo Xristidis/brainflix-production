@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "concurrently \"cd server && nodemon server.js\" \"cd client && npm start\"",
+    "start": "concurrently \"nodemon server.js\" \"cd client && npm start\"",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "dependencies": {

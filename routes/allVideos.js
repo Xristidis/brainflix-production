@@ -21,7 +21,7 @@ router.get("/:id", (req, res) => {
 
 router.post('/', (req, res) => {
     allVideosData.push(req.body.newVideo);
-    fs.writeFileSync("./data/allVideos.json", JSON.stringify(allVideosData, null, 2));
+    fs.writeFileSync("../data/allVideos.json", JSON.stringify(allVideosData, null, 2));
     return res.status(201).send(true);
 });
 

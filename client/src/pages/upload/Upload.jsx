@@ -3,6 +3,7 @@ import "../upload/Upload.scss";
 import uploadPreview from "../../assets/images/Upload-video-preview.jpg";
 import axios from "axios";
 import { v4 as uuidv4 } from "uuid";
+import apiRoute from "../../variable";
 
 class Upload extends React.Component {
 
@@ -53,10 +54,10 @@ class Upload extends React.Component {
         'channel': "New Upload",
         'id': `${uuid}`
       };
-    axios.post("https://localhost:5000/videoList", { newVideoForList: newVidForList })
+    axios.post(`${apiRoute}/videoList`, { newVideoForList: newVidForList })
       .then(res => {
         console.log(res)
-        axios.post(`https://localhost:5000/allVideos`, { newVideo })
+        axios.post(`${apiRoute}/allVideos`, { newVideo })
       })
   };
 

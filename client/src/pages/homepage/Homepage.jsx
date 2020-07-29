@@ -6,6 +6,7 @@ import Video from "../../components/video/Video";
 import NextVideo from "../../components/next-video/NextVideo";
 import Pages from "../../pages/Page";
 import axios from "axios";
+import apiRoute from "../../variable";
 
 class Homepage extends React.Component {
   state = {
@@ -14,13 +15,13 @@ class Homepage extends React.Component {
   };
   componentDidMount() {
     axios
-      .get(`http://localhost:5000/videoList`)
+      .get(`${apiRoute}/videoList`)
       .then(res => {
         const nextVideoList = res.data;
         const mainVideoId = nextVideoList[0].id;
         this.setState({ nextVideoList });
         return axios.get(
-          `http://localhost:5000/allVideos/${mainVideoId}`
+          `${apiRoute}/allVideos/${mainVideoId}`
         );
       })
       .then(res => {
@@ -35,7 +36,7 @@ class Homepage extends React.Component {
       const videoId = this.props.match.params.videoId;
       axios
         .get(
-          `http://localhost:5000/allVideos/${videoId}`
+          `${apiRoute}/allVideos/${videoId}`
         )
         .then(res => {
           const mainVideo = res.data;
