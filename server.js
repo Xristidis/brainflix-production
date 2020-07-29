@@ -11,6 +11,7 @@ const allVideosRoutes = require('./routes/allVideos.js');
 //Middleware
 app.use(express.json());
 app.use(cors());
+app.use(express.static(path.join(__dirname, "/client/build")));
 
 // Test route (go to https://localhost:5000/ in your browser 
 app.get('/api/', (req, res) => {
@@ -24,10 +25,8 @@ app.use("/api/videoList", videoListRoutes);
 
 // serves build folder for heroku https://www.youtube.com/watch?v=e1LaekAnVIM
 
-app.use(express.static(path.join(__dirname, "client/build")));
-
 app.get("/*", function (req, res) {
-    res.sendFile(path.join(__dirname, "client/build/index.html"));
+    res.sendFile(path.join(__dirname, "/client/build/index.html"));
 });
 
 app.listen(port, () => console.log(`On ${port}`));
