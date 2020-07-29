@@ -10,7 +10,7 @@ export default class Button extends React.Component {
         <Link className="header__button-link-wrapper" to="/upload">
           <button className="header__button">
             UPLOAD
-            <img className="button__operator"></img>
+            <img className="button__operator" />
           </button>
         </Link>
 
@@ -20,7 +20,7 @@ export default class Button extends React.Component {
             className="header__img"
             alt="side profile of human"
             id=""
-          ></img>
+          />
         </div>
       </div>
     );
