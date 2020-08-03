@@ -4,7 +4,7 @@ import Header from "./components/header/Header";
 import Homepage from "./pages/homepage/Homepage";
 import Upload from "./pages/upload/Upload";
 
-const apiKey = "?api_key=<c7956832-c973-4faf-a93c-e8e1672bf6ae>";
+// const apiKey = "?api_key=<c7956832-c973-4faf-a93c-e8e1672bf6ae>";
 function App() {
   return (
     <div className="App">

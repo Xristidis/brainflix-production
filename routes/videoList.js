@@ -12,9 +12,11 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
     // Destructuring `body` out of the request object
     // Equivalent to saying `const body = req.body;`
-    const { body } = req;
-    videoListData.push(body.newVideoForList);
-    fs.writeFileSync("../data/videoList.json", JSON.stringify(videoListData, null, 2));
+    // const { body } = req;
+    // console.log(req.body);
+    // console.log(videoListData);
+    videoListData.push(req.body);
+    fs.writeFileSync("../data/videoList.json", JSON.stringify(videoListData));
     res.status(201).json(videoListData);
 });
 module.exports = router;

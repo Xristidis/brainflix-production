@@ -1,17 +1,19 @@
 import React from "react";
 import "../homepage/Homepage.scss";
-import Header from "../../components/header/Header";
+// import Header from "../../components/header/Header";
 import Comments from "../../components/comments/Comments";
 import Video from "../../components/video/Video";
 import NextVideo from "../../components/next-video/NextVideo";
 import Pages from "../../pages/Page";
 import axios from "axios";
 import apiRoute from "../../variable";
+import { v4 as uuidv4 } from "uuid";
 
 class Homepage extends React.Component {
   state = {
     mainVideo: {},
-    nextVideoList: []
+    nextVideoList: [],
+    comments: []
   };
   componentDidMount() {
     axios
@@ -45,6 +47,28 @@ class Homepage extends React.Component {
         });
     }
   }
+
+  // sendComment = (id, comment) => {
+  //   Axios.post(`${apiRoute}/${videoId}/comments`, comment).then(
+  //     this.getCurrVid(id)
+  //   );
+  // };
+
+  // commenting = event => {
+  //   event.preventDefault();
+
+  //   let id = this.state.mainVids.id;
+  //   let comment = {
+  //     name: "Sehroz",
+  //     comment: `${event.target.comment.value}`,
+  //     likes: 1,
+  //     timestamp: new Date().getTime(),
+  //     id: uuidv4()
+  //   };
+  //   this.sendComment(id, comment);
+  //   // this.getCurrVid(id);
+  //   event.target.reset();
+  // };
 
   render() {
     return (

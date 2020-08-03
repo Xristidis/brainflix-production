@@ -10,7 +10,7 @@ export default class Button extends React.Component {
         <Link className="header__button-link-wrapper" to="/upload">
           <button className="header__button">
             UPLOAD
-            <img className="button__operator" />
+            <div className="button__operator"></div>
           </button>
         </Link>
 

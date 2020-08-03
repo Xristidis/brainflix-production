@@ -114,7 +114,7 @@ main {
     justify-content: center;
     width: 90%;
     margin: auto;
-    align-items: end;
+    align-items: flex-end;
     @include tablet {
       flex-direction: row;
       width: 100%;

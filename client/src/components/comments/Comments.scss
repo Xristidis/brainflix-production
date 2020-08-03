@@ -51,12 +51,12 @@
     flex-direction: column;
     justify-content: center;
     width: 75%;
-    align-items: end;
+    align-items: flex-end;
     @include tablet {
       flex-direction: row;
       width: 90%;
       align-items: flex-end;
-      justify-content: end;
+      justify-content: flex-end;
     }
     @include desktop {
       flex-direction: row;
@@ -84,7 +84,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    align-items: end;
+    align-items: flex-end;
     height: 195px;
     line-height: 1.5;
     border-bottom: solid 1px $mercury;

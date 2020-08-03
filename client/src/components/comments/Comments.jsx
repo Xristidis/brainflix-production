@@ -28,7 +28,7 @@ function timeSince(date) {
   }
   return Math.floor(seconds) + " seconds ago";
 }
-var aDay = 24 * 60 * 60 * 1000;
+// var aDay = 24 * 60 * 60 * 1000;
 // console.log(timeSince(new Date(Date.now() - aDay)));
 // console.log(timeSince(new Date(Date.now() - aDay * 2)));
 
@@ -41,19 +41,19 @@ export default class Comments extends React.Component {
     } else {
       return (
         <section className="comments">
-          <h2 className="comments__header">3 Comments</h2>
+          <h2 className="comments__header">Comments</h2>
           <div className="comments__wrapper">
-            <img className="comments__photo"></img>
+            <div alt="portrait of man" className="comments__photo"></div>
             <form className="comments__new">
               <div className="comments__comment-area">
-                <label for="" className="comments__label">
+                <label className="comments__label">
                   JOIN THE CONVERSATION
                 </label>
                 <textarea
                   type="text"
                   name="comment"
-                  placeholder="That was easily the most spectacualr BMX moment ever."
-                  maxlength="120"
+                  placeholder="Comment here..."
+                  maxLength="120"
                   size="30"
                   rows="4"
                   width="48"
@@ -65,7 +65,7 @@ export default class Comments extends React.Component {
                 type="submit"
                 value="COMMENT"
                 className="comments__button"
-                disabled
+              // disabled
               ></input>
             </form>
           </div>
@@ -73,7 +73,7 @@ export default class Comments extends React.Component {
             {comments.map(commentObj => {
               return (
                 <div className="comments__past">
-                  <img className="comments__past-photo" />
+                  <div className="comments__past-photo"> </div>
                   <div className="comments__info">
                     <div className="comments__name">{commentObj.name}</div>
                     <div className="comments__date">

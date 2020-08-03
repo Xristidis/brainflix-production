@@ -266,6 +266,7 @@ header {
     background-position: 35% center;
     background-size: 8%;
     padding-left: 18%;
+    cursor: pointer;
     @include tablet {
       width: 124px;
       height: 50px;

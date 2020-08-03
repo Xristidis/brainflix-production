@@ -1,14 +1,14 @@
 import React from "react";
 import "./Video.scss";
-import VideoPlaceholder from "../../assets/images/video-list-0.jpg";
 import viewsIcon from "../../assets/icons/SVG/Icon-views.svg";
 import likesIcon from "../../assets/icons/SVG/Icon-likes.svg";
 import play from "../../assets/icons/PNG/Icon-play.png";
-import duration from "../../assets/icons/PNG/Icon-scrubber-control.png";
 import fullscreen from "../../assets/icons/PNG/Icon-fullscreen.png";
 import volume from "../../assets/icons/PNG/Icon-volume.png";
+// import VideoPlaceholder from "../../assets/images/video-list-0.jpg";
+// import duration from "../../assets/icons/PNG/Icon-scrubber-control.png";
 
-function timeSince(date) {
+export function timeSince(date) {
   var seconds = Math.floor((new Date() - date) / 1000);
   var interval = Math.floor(seconds / 31536000);
   if (interval > 1) {
@@ -32,7 +32,7 @@ function timeSince(date) {
   }
   return Math.floor(seconds) + " seconds ago";
 }
-var aDay = 24 * 60 * 60 * 1000;
+// var aDay = 24 * 60 * 60 * 1000;
 // console.log(timeSince(new Date(Date.now() - aDay)));
 // console.log(timeSince(new Date(Date.now() - aDay * 2)));
 
