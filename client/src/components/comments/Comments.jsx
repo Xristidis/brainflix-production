@@ -65,7 +65,7 @@ export default class Comments extends React.Component {
                 type="submit"
                 value="COMMENT"
                 className="comments__button"
-              // disabled
+                disabled
               ></input>
             </form>
           </div>

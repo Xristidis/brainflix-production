@@ -1,1 +1,5 @@
-Concurrently in root package.json for Sprint3 so I can run both client/server at same time.
+// COMMENT OUT LOCAL HOST TO RUN APP ON HEROKU. 
+// WHEN STARTING UP LOCALLY THEN COMMENT OUT "const apiRoute = /api" UND UNCOMMENT LOCALHOST
+
+
+Access through variable.js

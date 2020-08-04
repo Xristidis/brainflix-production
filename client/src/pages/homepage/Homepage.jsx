@@ -48,28 +48,6 @@ class Homepage extends React.Component {
     }
   }
 
-  // sendComment = (id, comment) => {
-  //   Axios.post(`${apiRoute}/${videoId}/comments`, comment).then(
-  //     this.getCurrVid(id)
-  //   );
-  // };
-
-  // commenting = event => {
-  //   event.preventDefault();
-
-  //   let id = this.state.mainVids.id;
-  //   let comment = {
-  //     name: "Sehroz",
-  //     comment: `${event.target.comment.value}`,
-  //     likes: 1,
-  //     timestamp: new Date().getTime(),
-  //     id: uuidv4()
-  //   };
-  //   this.sendComment(id, comment);
-  //   // this.getCurrVid(id);
-  //   event.target.reset();
-  // };
-
   render() {
     return (
       <>
